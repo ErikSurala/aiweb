@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f1a20;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 25px 0;
+    margin: 0;
+    background: #13232c;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #1b2f3a;
+    padding: 12px 0;
+    border-bottom: 1px solid #29404c;
+}
+
+nav a {
+    color: #8ee1ff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+table {
+    width: 40%;               
+    margin: 10px auto;
+    border-collapse: collapse;
+    background: #13232c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #1e3542;
+    padding: 8px;             
+    font-size: 16px;          
+}
+
+td {
+    padding: 10px 2px;        
+    border-bottom: 1px solid #223742;
+    font-size: 15px;          
+}
+
+tr:hover {
+    background: #182b33;
+}
+
+td img {
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        background: #162730;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        border: none;
+        padding: 6px 0;
+    }
+
+    td:nth-child(1)::before {
+        content: "Datum: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(2)::before {
+        content: "Domácí: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(3)::before {
+        content: "Výsledek: ";
+        font-weight: bold;
+    }
+
+    td:nth-child(4)::before {
+        content: "Hosté: ";
+        font-weight: bold;
+    }
+}
